@@ -25,6 +25,7 @@ public abstract class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 	public String getEmail() {
 		return email;
 	}
@@ -37,4 +38,9 @@ public abstract class Pessoa {
 	public void setTelefone(Telefone telefone) {
 		this.telefone = telefone;
 	} 
+
+	@Override
+	public String toString() {
+		return "[nome:" + nome + ", cpf:" + cpf + ", email:" + email + ", telefone:" + telefone + "]";
+	}
 }

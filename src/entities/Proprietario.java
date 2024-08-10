@@ -39,7 +39,7 @@ public class Proprietario extends Pessoa{
 
 	@Override
 	public String toString() {
-		return "Proprietario [brinde:" + brinde + ", animais:" + animais + ", CPF:" + getCpf() + ", Nome:"
+		return "Proprietário [brinde:" + brinde + ", animais:" + animais + ", CPF:" + getCpf() + ", Nome:"
 				+ getNome() + ", Email:" + getEmail() + ", Telefone" + getTelefone() + "]";
 	}
 	

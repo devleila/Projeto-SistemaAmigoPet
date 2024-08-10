@@ -7,7 +7,7 @@ public class Voluntario extends Pessoa{
 
 	public Voluntario(String cpf, String nome, String email, Telefone telefone, ArrayList<String> diasAtuacao) {
 		super(cpf, nome, email, telefone);
-		this.diasAtuacao = diasAtuacao;
+		this.diasAtuacao = new ArrayList<>();
 	}
 
 	public ArrayList<String> getDiasAtuacao() {
@@ -18,9 +18,12 @@ public class Voluntario extends Pessoa{
 		this.diasAtuacao = diasAtuacao;
 	}
 
-	//próxima aula: sobrescrita de método!
-//	@Override
-//	public void metodo() {
-//		// TODO Auto-generated method stub
-//	}
+	@Override
+	public String toString() {
+		return "Voluntario:" + super.toString() + "\nDias de Atuação: " + diasAtuacao;
+	}
+
+
+
+
 }
